@@ -45,15 +45,6 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
-  require 'capybara/poltergeist'
-  require 'factory_girl_rails'
-  require 'capybara/rspec'
-
-  config.include Devise::Test::IntegrationHelpers, type: :feature
-  config.include FactoryGirl::Syntax::Methods
-  Capybara.javascript_driver = :poltergeist
-  Capybara.server = :puma
-
   # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
