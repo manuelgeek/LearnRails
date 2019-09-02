@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 //= require jquery
 //= require bootstrap-sprockets
+//= require posts/style
 
 require("@rails/ujs").start()
 require("turbolinks").start()
