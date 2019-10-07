@@ -5,6 +5,10 @@
   </div><!-- row -->
 
   <div class="row">
+    <%= render  'posts/branch/search_form',
+                branch: branch,
+                search_placeholder: search_placeholder %>
+
     <%= render 'posts/branch/categories', branch: branch %>
   </div>
 
